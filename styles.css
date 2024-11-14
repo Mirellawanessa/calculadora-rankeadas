@@ -1,0 +1,70 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+label, input, button {
+    margin: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para o botão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Estilos para o histórico */
+#historico {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#historico ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historico li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

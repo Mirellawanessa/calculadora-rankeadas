@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Partidas Rankeadas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <h1>Calculadora de Partidas Rankeadas</h1>
+    
+    <!-- Formulário para inserir vitórias e derrotas -->
+    <label for="vitorias">Vitórias:</label>
+    <input type="number" id="vitorias" min="0" required>
+    
+    <label for="derrotas">Derrotas:</label>
+    <input type="number" id="derrotas" min="0" required>
+    
+    <button onclick="calcularResultado()">Calcular</button>
+    
+    <!-- Div para exibir o resultado -->
+    <div id="resultado"></div>
+    
+    <!-- Histórico de cálculos -->
+    <div id="historico">
+        <h3>Histórico de Cálculos:</h3>
+        <ul id="lista-historico"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
